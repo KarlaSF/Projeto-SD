@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-chat {
+  width: 100%;
+  max-width: 720px;
+  margin: 20px auto;
+  background: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #0002;
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  padding: 15px;
+  background: rgb(87, 26, 102);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*mensagens*/
+.mensagens {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fafafa;
+}
+
+.msg-item {
+  background: #e5e5ff;
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 80%;
+  box-shadow: 0 0 4px #0001;
+}
+
+.msg-item strong {
+  font-size: 14px;
+  color: #4c1d95;
+}
+
+.msg-item p {
+  margin: 5px 0;
+}
+
+.msg-item .hora {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/*enviar as mensagens */
+.enviarMensagens {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.enviarMensagens input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.enviarMensagens button {
+  padding: 10px 18px;
+  background: rgb(87, 26, 102);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.enviarMensagens button:hover {
+  background: rgb(87, 26, 102);
+}
